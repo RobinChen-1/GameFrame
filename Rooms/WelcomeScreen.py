@@ -1,5 +1,5 @@
 from GameFrame import Level
-from Objects.Title import Title
+from Objects.Title import Title, Subtitle 
 
 class WelcomeScreen(Level):
     """
@@ -13,3 +13,4 @@ class WelcomeScreen(Level):
 
         # add title object
         self.add_room_object(Title(self, 240, 200))
+        self.add_room_object(Subtitle(self, 325, 550))
